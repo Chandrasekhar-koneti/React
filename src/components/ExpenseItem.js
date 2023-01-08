@@ -1,11 +1,21 @@
+
+import './expense.css'
 function ExpenseItem(){
-    return <div>
-        <div> <h2>ExpenseItem</h2></div>
-        <div>
-            <h4>Food RS.150</h4>
-            <h4>Petrol RS.100</h4>
-        </div>
+    const expensedes='Car Insurance'
+    const expensecost='RS.2150'
+    const location='Hyderbad'
+
+
+
+    return (<div><h1>EXPENSE LIST</h1> 
+    <div className='expense-item'>
+    <div><h2>{location}</h2></div>
+
+        <div className='expense-item__description'><h2>{expensedes}</h2> </div>
+
+        <div className='expense-item__price'>{expensecost}</div>
     </div>
+    </div>)
 }
 
 export default ExpenseItem
